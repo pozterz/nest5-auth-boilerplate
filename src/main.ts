@@ -4,6 +4,7 @@ import { Config } from './config/'
 import * as helmet from 'helmet';
 import * as express from 'express'
 import * as bodyParser from 'body-parser'
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 // import * as rateLimit from 'express-rate-limit';
 
@@ -20,6 +21,15 @@ async function bootstrap() {
   //   windowMs: 15 * 60 * 1000, // 15 minutes
   //   max: 100 // limit each IP to 100 requests per windowMs
   // }));
+  const options = new DocumentBuilder()
+        .setBasePath('/api')
+        .setTitle('APIs')
+        .setDescription('APIs Documentation')
+        .setVersion('1.0')
+        .addTag('v1')
+        .build();
+    const document = SwaggerModule.createDocument(app, options);
+    SwaggerModule.setup('/docs', app, document);
   await app.listen(Config.port);
 }
 bootstrap();
