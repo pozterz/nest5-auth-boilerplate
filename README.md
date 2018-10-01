@@ -14,17 +14,21 @@
 
 ### Config Files
 ```
-  src/config/config.ts
+  src/config/index.ts
 ```
 
 ### Installation
 ```bash
   - npm install
+  or use yarn
+  - yarn install
 ```
 
 ### Build
 ```bash
   - npm run prestart:prod
+  or use yarn 
+  - yarn run prestart:prod
 ```
 
 ##### dist dir will be created after built and use main.js to run server with process manager (eg. pm2 , forever)
