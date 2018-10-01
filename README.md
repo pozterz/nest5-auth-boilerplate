@@ -1,6 +1,6 @@
 # Nest 5 Start up
-#### dev by: Thanarack
-#### contact: thanarackc@gmail.com
+#### dev by: -Pozterz-
+#### contact: pozterz2@gmail.com, tharathep@pirsquare.net
 
 ### Architecture
 - NestJS 5
