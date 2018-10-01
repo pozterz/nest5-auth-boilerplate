@@ -8,11 +8,10 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 // import * as rateLimit from 'express-rate-limit';
 
-
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
-  app.setGlobalPrefix('api')
-  app.use('/upload', express.static(__dirname + '/../upload'))
+  app.setGlobalPrefix(Config.path.preFixApi)
+  app.use(Config.path.upload, express.static(Config.path.static))
   app.use(bodyParser.json({ limit: '3MB' }))
   app.use(helmet());
   app.enableCors()
