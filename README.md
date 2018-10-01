@@ -17,6 +17,11 @@
   src/config/index.ts
 ```
 
+### Pre install
+Please setup npm or yarn
+npm - https://nodejs.org/en/
+yarn - https://yarnpkg.com/en/
+
 ### Installation
 ```bash
   - npm install
