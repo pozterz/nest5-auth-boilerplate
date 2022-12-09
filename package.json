@@ -21,8 +21,8 @@
   },
   "dependencies": {
     "@nestjs/common": "^5.1.0",
-    "@nestjs/core": "^5.1.0",
-    "@nestjs/swagger": "^2.5.1",
+    "@nestjs/core": "^9.2.1",
+    "@nestjs/swagger": "^6.1.4",
     "bcrypt": "^3.0.1",
     "class-transformer": "^0.1.9",
     "fastify-formbody": "^2.0.1",
